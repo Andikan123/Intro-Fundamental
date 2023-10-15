@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+*{
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #001e4d;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quiz{
+    background: white;
+    width: 80%;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.app h1{
+    color: #001e4d;
+    padding: 20px 0;
+    border-bottom:1px solid black ;
+
+}
+#question{
+    color: #001e4d;
+    margin: 10px 0;
+}
+#answers{
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    text-align: left;
+    padding: 15px;
+    background: none;
+    outline: none;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#next-btn{
+    width: 140px;
+    display: none;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background: #001e4d;
+    color: white;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: white;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
